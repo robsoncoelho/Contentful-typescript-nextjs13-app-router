@@ -18,11 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {draftMode().isEnabled && (
-          <p className="bg-orange-200 py-4 px-[6vw]">
-            Draft mode is on! <ExitDraftModeLink className="underline" />
-          </p>
-        )}
+        {draftMode().isEnabled && <ExitDraftModeLink className="underline" />}
+        <ExitDraftModeLink className="underline" />
         {children}
       </body>
     </html>
