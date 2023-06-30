@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { revalidatePath } from 'next/cache'
 import { headers } from 'next/headers'
 
-export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
   const headersList = headers()
   // should be secret, custom header coming in from Contentful
   const inboundRevalToken = headersList.get('x-vercel-reval-key')
