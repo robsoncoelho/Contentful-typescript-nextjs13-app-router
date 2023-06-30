@@ -7,7 +7,7 @@ export default function ExitDraftModeLink(
 ) {
   const pathname = usePathname();
   return (
-    <div className="bg-electricYellow text-black py-2 text-center text-sm">
+    <div className="bg-ts-error text-black py-2 text-center text-sm">
       This is page is a preview.{" "}
       <a
         href={`/api/disable-draft?redirect=${pathname}`}

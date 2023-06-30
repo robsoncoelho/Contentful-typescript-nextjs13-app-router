@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { draftMode } from "next/headers";
-import ExitDraftModeLink from "./ExitDraftModeLink";
+import ExitDraftModeLink from "../components/ExitDraftModeLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {draftMode().isEnabled && <ExitDraftModeLink className="underline" />}
-        <ExitDraftModeLink className="underline" />
         {children}
       </body>
     </html>
