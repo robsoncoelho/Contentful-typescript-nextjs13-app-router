@@ -72,7 +72,7 @@ async function BlogPostPage({ params }: BlogPostPageProps) {
         )}
 
         {/* Render the blog post title */}
-        <h1>{blogPost.title}</h1>
+        <h1 className="text-3xl mt-4">{blogPost.title}</h1>
 
         {/* Render the blog post body */}
         <RichText content={blogPost.content} />

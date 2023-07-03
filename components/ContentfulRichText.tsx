@@ -42,10 +42,8 @@ const RichText = ({ content }: RichTextProps) => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className={markdownStyles["markdown"]}>
-        {documentToReactComponents(content, renderMarkdownOptions)}
-      </div>
+    <div className={markdownStyles["markdown"]}>
+      {documentToReactComponents(content, renderMarkdownOptions)}
     </div>
   );
 };

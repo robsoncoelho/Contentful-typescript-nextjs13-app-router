@@ -10,7 +10,7 @@ async function Home() {
   return (
     <main className="p-[6vw]">
       <div className="prose">
-        <h1>My Contentful Blog</h1>
+        <h1 className="text-3xl mb-6">My Contentful Blog</h1>
         <ul>
           {blogPosts.map((blogPost) => {
             return (
