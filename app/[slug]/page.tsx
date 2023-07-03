@@ -3,7 +3,7 @@ import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
 import { fetchBlogPost, fetchBlogPosts } from "../../contentful/blogPosts";
 import Link from "next/link";
-import RichText from "../../contentful/richText";
+import RichText from "../../components/ContentfulRichText";
 import ContentfulImage from "../../components/ContentfulImage";
 
 interface BlogPostPageParams {
@@ -75,7 +75,7 @@ async function BlogPostPage({ params }: BlogPostPageProps) {
         <h1>{blogPost.title}</h1>
 
         {/* Render the blog post body */}
-        <RichText document={blogPost.content} />
+        <RichText content={blogPost.content} />
       </div>
     </main>
   );
